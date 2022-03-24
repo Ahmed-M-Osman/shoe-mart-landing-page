@@ -1,0 +1,54 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(17, 29, 192);
+    overflow: auto;
+    padding: 5px;
+}
+.title-div{
+    width: 50%;
+    background-color: rgb(17, 29, 192);
+    padding-left: 10px;
+    padding-top: 0%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 7vmin;
+    color: white;
+}
+.nav-links {
+    gap: 1em;
+    font-size: 50px;
+    padding-right: 40px;
+    display: flex;
+    float: right;
+    width: auto;
+}
+
+a { 
+  float: right;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+  border: 20px;
+  width: 20%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+    
+}
+
+a:hover{
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    
+}
+@media screen and (max-width: 500px) {
+    .nav-link a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+  }
